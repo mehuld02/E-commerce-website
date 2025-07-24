@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+        <div class="container">
+          <img src="image/logo1.png" alt="">
+          <button class="navbar-toggler" type="button" 
+          data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i id="bar" class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="categories.html">Category</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-li active" href="#">
+                  <i class="fa-brands fa-searchengin"></i>
+                </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-li" href="cart.html">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+              </li>
+          </div>
+        </div>
+      </nav>
+     
+<section class="search_section py-5 my-5" id="search_section">
+    <div class="container">
+        <div class="title text-center mb-5">
+            <h2><i class="fa-brands fa-searchengin"></i> Search</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="input-group">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search for products...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button" onclick="searchProducts()"><i class="fa fa-search"></i></button>
+                    </span>
+                </div>
+                <small id="searchInfo"></small>
+                <div class="table-responsive mt-3">
+                    <table class="table table-hover">
+                        <tbody id="productTable" class="border-bottom">
+                            <tr>
+                                <td class="number text-center">1</td>
+                                <td class="image"><img src="image/shop/24.jpg" width="100px" class="img img-fluid" alt=""></td>
+                                <td class="product"><strong>clothes</strong><br>This is the product description.</td>
+                                <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
+                                <td class="price text-right">₹350</td>
+                            </tr>
+                            <tr>
+                                <td class="number text-center">2</td>
+                                <td class="image"><img src="image\shoes\3.jpg" width="100px" class="img img-fluid" alt=""></td>
+                                <td class="product"><strong>shoes</strong><br>This is the product description.</td>
+                                <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
+                                <td class="price text-right">₹400</td>
+                            </tr>
+                            <tr>
+                                <td class="number text-center">3</td>
+                                <td class="image"><img src="image\watches\1 (1).jpg" width="100px" class="img img-fluid" alt=""></td>
+                                <td class="product"><strong>watches</strong><br>This is the product description.</td>
+                                <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
+                                <td class="price text-right">₹450</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="mt-5 py-5">
+    <div class="row container mx-auto pt-5">
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+            <img src="image/logo2.png" alt="">
+            <p class="pt-3">Fringilla urna porttitor rhoncus dolor purus luctus</p>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+            <h5 class="pb-2">Featured</h5>
+            <ul class="text-uppercase list-unstyled">
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Boys</a></li>
+                <li><a href="#">Girls</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Clothes</a></li>
+            </ul>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+            <h5 class="pb-2">Contact Us</h5>
+            <div>
+                <h6 class="text-uppercase">Address</h6>
+                <p>123 Street Name, City, US</p>
+            </div>
+            <div>
+                <h6 class="text-uppercase">Phone</h6>
+                <p>(123) 456-7890</p>
+            </div>
+            <div>
+                <h6 class="text-uppercase">Email</h6>
+                <p>mail@example.com</p>
+            </div>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+            <h5 class="pb-2">Instagram</h5>
+            <div class="row">
+                <img class="img-fluid w-25 h-100 m-2" src="image/insta/1.jpg" alt="">
+                <img class="img-fluid w-25 h-100 m-2" src="image/insta/2.jpg" alt="">
+                <img class="img-fluid w-25 h-100 m-2" src="image/insta/4.jpg" alt="">
+                <img class="img-fluid w-25 h-100 m-2" src="image/insta/5.jpg" alt="">
+                <img class="img-fluid w-25 h-100 m-2" src="image/insta/6.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="copyright mt-5">
+        <div class="row container mx-auto">
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <img src="image/payment.png" alt="">
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+                <p>Rymo eCommerce © 2024. All Rights Reserved</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+function searchProducts() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const table = document.getElementById('productTable');
+    const rows = table.getElementsByTagName('tr');
+    let results = 0;
+
+    for (let i = 0; i < rows.length; i++) {
+        const productCell = rows[i].getElementsByClassName('product')[0];
+        const productText = productCell.textContent || productCell.innerText;
+        if (productText.toLowerCase().indexOf(input) > -1) {
+            rows[i].style.display = '';
+            results++;
+        } else {
+            rows[i].style.display = 'none';
+        }
+    }
+
+    const searchInfo = document.getElementById('searchInfo');
+    searchInfo.innerHTML = `Showing all results matching "${input}" (${results} results)`;
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" 
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" 
+crossorigin="anonymous"></script>
+          
+</body>
+</html>
