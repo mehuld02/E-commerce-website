@@ -4,7 +4,8 @@ A modern, responsive front-end e-commerce website. This project showcases a vari
 
 ## 📸 Screenshot
 
-![alt text](<Screenshot 2025-07-24 190104.png>)
+<img width="1857" height="863" alt="Screenshot 2025-07-24 190104" src="https://github.com/user-attachments/assets/c288b90c-4741-43c4-a629-fc11e04d8cb1" />
+
 
 ## 💡 Features
 
